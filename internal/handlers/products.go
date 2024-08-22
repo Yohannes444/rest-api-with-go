@@ -15,7 +15,7 @@ import (
 
 type Product struct {
 	Id        primitive.ObjectID `json :"_id" bson:"_id" validare:"required"`
-	CreatedAt time.Time          `json: "crearedAt" bson: "created_at" validare:"required"`
+	CreatedAt time.Time          `json: "createdAt" bson: "created_at" validare:"required"`
 	UpdatedAt time.Time          `json: "updatedAt" bson: "updated_at" validare:"required"`
 	Title     string             `json: "title" bson: "title" validare:"required", min=12`
 }
